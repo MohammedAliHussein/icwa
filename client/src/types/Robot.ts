@@ -1,5 +1,5 @@
 export type Robot = {
-	row: number;
-	column: number;
-	direction: string;
+  row: number;
+  column: number;
+  direction: string;
 };
