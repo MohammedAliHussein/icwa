@@ -15,6 +15,8 @@
           )
         ).data;
 
+        localStorage.setItem('instance_id', data.id);
+
         update_message_with_transition(data.message);
 
         board.update_robot(data.state.row, data.state.column, data.state.direction);
@@ -29,6 +31,8 @@
       const data = (
         await axios.get(`${get_endpoint()}/${localStorage.getItem('instance_id') ?? -1}/report`)
       ).data;
+
+      localStorage.setItem('instance_id', data.id);
 
       update_message_with_transition(data.message);
     } catch (error: any) {

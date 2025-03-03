@@ -1,4 +1,4 @@
-import { get_instances, instance_exists } from "../shared/instances.js";
+import { get_instances, instance_exists } from '../shared/instances.js';
 
 export function move_robot(request, response) {
   try {
@@ -10,11 +10,13 @@ export function move_robot(request, response) {
       instances[id].move_robot();
 
       response.status(200).send({
+        id: id,
         state: instances[id].get_robot().get_state(),
-        message: "Moving",
+        message: 'Moving',
       });
     } catch (error) {
       response.status(400).send({
+        id: id,
         message: error.message,
         state: instances[id].get_robot().get_state(),
       });

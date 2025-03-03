@@ -1,4 +1,4 @@
-import { get_instances, instance_exists } from "../shared/instances.js";
+import { get_instances, instance_exists } from '../shared/instances.js';
 
 export function report_position(request, response) {
   try {
@@ -7,6 +7,7 @@ export function report_position(request, response) {
     let id = instance_exists(request.params.id);
 
     response.status(200).send({
+      id: id,
       state: instances[id].get_robot().get_state(),
       message: instances[id].report_position(),
     });
