@@ -1,25 +1,25 @@
-import { Game } from '../models/game.js';
+import { Game } from "../models/game.js";
 
 let instances = null;
 
 export function get_instances() {
-	if (!instances) {
-		instances = {};
-	}
+  if (!instances) {
+    instances = {};
+  }
 
-	return instances;
+  return instances;
 }
 
 export function instance_exists(id) {
-	if (!id || !(id in instances)) {
-		const largest_id = Math.max(
-			Object.keys(instances).map(key => parseInt(key)),
-		);
+  if (!id || !(id in instances)) {
+    const largest_id = Math.max(
+      Object.keys(instances).map((key) => parseInt(key)),
+    );
 
-		id = largest_id + 1;
+    id = largest_id + 1;
 
-		instances[id] = new Game();
-	}
+    instances[id] = new Game();
+  }
 
-	return id;
+  return id;
 }
