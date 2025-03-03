@@ -19,10 +19,6 @@ The UI has two options for use: **File Input** and **Control Input**.
 - The program expects **valid direction values**.  
 - Invalid directions will be defaulted to North.
 
-### ⚠️ Instance ID Disclaimer  
-- The app tracks **separate users** using an `instance_id` stored locally.  
-- **Do not change your `instance_id` variable locally**, as this could impact another user's game state. 
-
 ## Deployed Demo
 
 Since this is a take-home project, I have hosted it at a separate endpoint within one of my existing projects. [https://www.seektime.app/icwa/]
