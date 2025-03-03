@@ -1,6 +1,6 @@
 # Take Home Assessment
 
-![](demo.mp4)
+![](demo.gif)
 
 ## Usage
 
