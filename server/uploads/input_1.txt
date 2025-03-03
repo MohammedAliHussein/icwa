@@ -1,8 +1,8 @@
-------geckoformboundary359254b5da19e7562e1df2f4a6a66603
+------geckoformboundarya472661f9ca9cb1bfdeca11539c932ca
 Content-Disposition: form-data; name="input_file"; filename="input.txt"
 Content-Type: text/plain
 
-PLACE 0,0,NORTH
+PLACE 0,0,ASD
 MOVE
 REPORT
 PLACE 0,0,NORTH
@@ -14,4 +14,4 @@ MOVE
 LEFT
 MOVE
 REPORT 
-------geckoformboundary359254b5da19e7562e1df2f4a6a66603--
+------geckoformboundarya472661f9ca9cb1bfdeca11539c932ca--

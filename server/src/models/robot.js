@@ -1,4 +1,4 @@
-import { Directions } from "../shared/directions.js";
+import { Directions } from '../shared/directions.js';
 
 export class Robot {
   constructor(row, column, direction) {
@@ -10,21 +10,22 @@ export class Robot {
   place(row, column, direction) {
     this.row = row;
     this.column = column;
-    this.direction = Directions[direction];
+    this.direction =
+      direction in Directions ? Directions[direction] : Directions.NORTH;
   }
 
   rotate_left() {
     switch (this.direction.name) {
-      case "North":
+      case 'North':
         this.direction = Directions.WEST;
         break;
-      case "East":
+      case 'East':
         this.direction = Directions.NORTH;
         break;
-      case "South":
+      case 'South':
         this.direction = Directions.EAST;
         break;
-      case "West":
+      case 'West':
         this.direction = Directions.SOUTH;
         break;
     }
@@ -32,16 +33,16 @@ export class Robot {
 
   rotate_right() {
     switch (this.direction.name) {
-      case "North":
+      case 'North':
         this.direction = Directions.EAST;
         break;
-      case "East":
+      case 'East':
         this.direction = Directions.SOUTH;
         break;
-      case "South":
+      case 'South':
         this.direction = Directions.WEST;
         break;
-      case "West":
+      case 'West':
         this.direction = Directions.NORTH;
         break;
     }
