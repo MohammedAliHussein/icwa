@@ -1,0 +1,17 @@
+------geckoformboundary359254b5da19e7562e1df2f4a6a66603
+Content-Disposition: form-data; name="input_file"; filename="input.txt"
+Content-Type: text/plain
+
+PLACE 0,0,NORTH
+MOVE
+REPORT
+PLACE 0,0,NORTH
+LEFT
+REPORT 
+PLACE 1,2,EAST
+MOVE
+MOVE
+LEFT
+MOVE
+REPORT 
+------geckoformboundary359254b5da19e7562e1df2f4a6a66603--
