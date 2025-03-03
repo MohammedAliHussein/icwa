@@ -1,6 +1,6 @@
 # Take Home Assessment
 
-![UI Screenshot](inputs/screenshot.png)
+![](demo.mp4)
 
 ## Usage
 
